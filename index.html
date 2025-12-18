@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Arroba's Page</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!--CSS relación-->
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<!--como esto es solo la página de carga voy a a juntar el css y html en este mismo documento-->
+
+<body class="index-body">
+  <!--MUSICA DE LA PAGINA-->
+  <audio id="index__audio" loop autoplay>
+    <source src="audio/musica1.mp3" type="audio/mpeg">
+  </audio>
+  <!--FONDO DE PAGINA-->
+  <main class="index-main">
+    <h1 class="index-title">Welcome Visitor</h1>
+    <!--BOTONES PARA ACCEDER-->
+    <div class="index-buttons">
+      <button id="button-enter">Enter</button>
+      <button id="button-exit">Exit</button>
+    </div>
+  </main>
+
+  <!--LA PARTE DE JAVASCRIPT/BOTONES DE ACCESO O NO ACCESO-->
+  <script>
+    document.getElementById('button-enter').addEventListener('click', function () {
+      window.location.href = 'PaginaPrincipal.html';
+    });
+    document.getElementById('button-exit').addEventListener('click', function () {
+      window.location.href = 'https://www.google.com';
+    });
+  </script>
+
+</body>
+
+</html>

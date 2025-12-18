@@ -1,0 +1,347 @@
+/* I declared some variables by default to optimize my work flow */
+:root {
+  --clr-color: #0b0244;
+}
+
+/* INDEX BEGINNING */
+body {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+.index-body {
+  background-image: url("../img/descarga.gif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+.index-title {
+  color: #f6ff00;
+  font-size: 10vw;
+  font-weight: 900;
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+}
+
+.index-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px; 
+  bottom: 30%;
+  position: absolute;
+  left: 20%;
+  right: 20%;
+}
+
+.index-buttons button {
+  font-family: 'Press Start 2P';
+  font-size: 12px;
+  text-transform: uppercase;
+  color: white;
+  border: 3px solid white; 
+  padding: 10px 20px;
+  margin: 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#button-enter {
+  background-color: rgb(226, 16, 16);
+}
+#button-enter:hover {
+  background-color: rgb(156, 44, 44); 
+}
+
+#button-exit {
+  background-color: rgb(0, 48, 170);
+}
+#button-exit:hover {
+  background-color: rgb(39, 6, 96);
+}
+
+/* INDEX END*/
+
+/* BEGIN MAIN PAGE */
+body.main-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  cursor: url(../img/cursor.gif), auto;
+  background-image: url("../img/wallpaper.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center fixed;
+  font-family: 'Courier New', monospace;
+  color: #e0dfff;
+  margin: 0; 
+  padding: 0; 
+  min-height: 100vh
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;  
+  gap: 0.5rem; 
+  width: 100%;
+  max-width: 1200px;
+  margin: 0.25rem auto;
+  flex: 1;
+  padding-bottom: 20px;
+}
+
+#main-title {
+  width: 100%;
+  height: auto;
+}
+
+.main-aside {
+  flex: 1;
+  background-color: var(--clr-color);
+  padding: 0.5rem; 
+  font-size: 0.9em;
+  text-align: center;
+  border-radius: 8px;
+  box-sizing: border-box;
+  min-height: 400px;  
+  align-self: stretch;
+}
+
+.center {
+  flex: 2;
+  background-color: var(--clr-color);
+  padding: 0.5rem; 
+  border-radius: 8px;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;  
+  align-self:stretch;
+  max-width: 768px;
+}
+
+.center, .gallery {
+  display: flex;
+  flex-grow: 3;
+  flex-direction: column;
+  background-color: var(--clr-color);
+  margin: 0;  
+  padding: 10px; 
+}
+
+.header img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.how-have-you-been-option {
+  display: inline-block;
+  text-align: center;
+}
+
+.how-have-you-been-option label {
+  display: block;
+}
+
+/* NAV BAR */
+.navbar {
+  background-color: var(--clr-color);
+  border-top: 0px solid var(--clr-color);
+  border-bottom: 0px solid var(--clr-color);
+  margin-top: 0;
+  margin-bottom: 0; 
+  padding: 10px;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar a {
+  color: #e0dfff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #ff33cc;
+  text-shadow: 0 0 10px #ff33cc;
+}
+
+.aside-left {
+  order: 0;
+}
+
+.aside-right {
+  order: 2;
+}
+
+.center-section-introduction {
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  max-width: 30%;
+  max-height: auto;
+  box-sizing: border-box;
+}
+
+.giftshop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; 
+  padding: 20px 0; 
+}
+
+.pixel-sea {
+  margin-top: 30px; 
+  display: block;
+}
+
+.sticker-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.sticker {
+  transition: transform 0.6s ease-in-out; 
+  cursor: pointer; 
+}
+
+.sticker:hover {
+  transform: rotate(360deg);
+}
+
+.separator img {
+  height: auto;
+  width: 100%
+}
+
+#database-text {
+  height: auto;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-color);
+  text-align: center;
+  padding: 15px;
+  color: #e0dfff;
+  font-size: 0.9em;
+  margin-top: 0;
+  padding-top: 20px; 
+}
+
+
+.footer img {
+  margin-top: 0;
+  transition: 0.3s;
+}
+
+.footer img:hover {
+  transform: scale(1.1);
+}
+
+.footer-text-container {
+  margin: auto;
+  text-align: center;
+  align-self: center;
+}
+/* END MAIN PAGE */
+
+/* ALL MEDIA QUERIES */
+  /* Mobile */
+  @media (width < 768px) {
+    .container {
+      flex-direction: column;
+      gap: 0.25rem; 
+      margin: 0.25rem auto;
+    }
+    .main-aside {
+      display: none;
+    }
+    .header, .footer, .container {
+      width: 100%;
+    }
+
+    .footer-text-container {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .footer-text-separator {
+      display: none;
+    }
+  }
+  /* Tablet */
+  @media (width >= 768px) and (width <= 1024px) {
+    .header, .footer, .container {
+      width: 90%;
+    }
+    .container {
+      gap: 0.5rem;
+      margin: 0.5rem auto; 
+    }
+
+    .center {
+      max-width: 70%;
+    }
+
+    .footer-text-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .footer-text-container strong {
+      align-self: center;
+      flex-grow: 1;
+    }
+        
+    #ft-strong-copyright {
+      flex-grow: 1;
+      flex-basis: 50%;
+    }
+
+    #ft-separator-2 {
+      display: none;
+    }
+  }
+  /* Computer */
+  @media (width >= 1024px) {
+    .header, .footer, .container {
+      width: 60%;
+    }
+    .center {
+      width: 50%;
+    }
+  }
